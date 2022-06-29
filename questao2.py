@@ -7,21 +7,14 @@
 def fibonacci(num: int) -> bool:
     x = 0
     y = 1
-    fib = []
 
     for i in range(num):
-        # A cada laço, "fib" adiciona "x" (o valor principal) à pilha
-        # e em seguida recebe o valor de "y" (o valor depois de "x")
-        # e y é somado ao valor antecessor
-        fib.append(x)
+        if x == num:
+            return True
         x, y = y, y + x
 
-    # Retorna falso se o número não exister na lista "fib"
-    if num not in fib:
-        return False
-
-    return True
+    return False
 
 
-num = 400
+num = 13
 print(fibonacci(num))
