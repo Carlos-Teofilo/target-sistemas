@@ -9,3 +9,42 @@ a) Considerar a distância de 100km entre a cidade de Ribeirão Preto <-> Franca
 b) Considerar 2 pedágios como obstáculo e que o caminhão leva 5 minutos a mais
 para passar em cada um deles e o carro possui tag de pedágio (Sem Parar)
 c) Explique como chegou no resultado.
+
+__________________________________________________________________________
+Carro:
+	t = s / v
+	t = 100 / 110 
+	t = 0,9h (54 min)
+
+	O carro leva 54 minutos para chegar em Franca.
+__________________________________________________________________________
+Caminhão:
+	t = s / v
+	t = 100 / 80
+	t = 1,25h + 10 minutos das duas paradas (75 minutos)
+	
+	O caminhão leva 75 minutos para chegar em Ribeirão Preto.
+
+__________________________________________________________________________
+O carro e o caminhão se encontram:
+	Scar = 0 + 110*t
+	Scam = 100 - 80*t
+	
+	110t + 80t = 100
+	t = 100 / 190
+	t = 31,2 minutos
+
+__________________________________________________________________________
+O veículo mais próximo da cidade de Ribeirão Preto é o carro:
+
+Carro: 54 * x = 31,2 * 100  #  57,7 km
+Caminhão: 75 * x = 31,2 * 100  # 41, 6 km
+
+Distância do carro até Ribeirão Preto = 57,7 km
+Distância do caminhão até Ribeirão Preto = 58,4
+
+
+
+
+
+
